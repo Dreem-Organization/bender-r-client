@@ -1,6 +1,6 @@
 # Bender Client for Python
 
-> :warning: The full **DOCUMENTATION** on bender-python-client can be found [HERE](https://bender-optimizer.readthedocs.io/en/latest/documentation/python.html).
+> :warning: The full **DOCUMENTATION** on bender-r-client can be found [HERE](https://bender-optimizer.readthedocs.io/en/latest/documentation/r.html).
 
 ## Setup
 
@@ -9,11 +9,7 @@
 
 ## Usage Example
 
-> Let's use the famous MNIST example where we try to recognize handwritten digits in images.
-
-The code of the algorithm using [PyTorch](https://pytorch.org/) is the following :
-
-> To use this example, do not forget to ``` pip install numpy torch torchvision ``` .
+> Assuming 'my_optimization_problem()' is your function trying to optimize a result based on your own data and some hyperparameters.
 
 ```r
 bender = Bender$new("MyBenderMail", "MySecretPassword")

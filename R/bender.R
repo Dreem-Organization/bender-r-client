@@ -95,7 +95,7 @@ Bender <- R6Class("Bender", cloneable = FALSE, list(
     if(!hasArg(mail) || !hasArg(password) || !is.character(mail) || !is.character(password)) {
       stop("Please provide a mail string and a password string.")
     }
-    response = POST(paste(base_url, 'login/', sep=''), body = list(mail=mail, password=password), encode = "json")
+    response = POST(paste(base_url, 'login/', sep=''), body = list(username=mail, password=password), encode = "json")
     handle_request_errors(response)
     self$token <- paste('JWT', content(response)$token)
     self$mail <- content(response)$user$mail

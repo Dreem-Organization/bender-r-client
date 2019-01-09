@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Dylan HEIRSTRAETEN
 Maintainer: Valentin THOREY <valentin@dreem.com>
 Description: R client for Bender Hyperparameters optimizer : bender.dreem.com
-    The R client allows you to comunicate with the Bender API and therefore submit some new trials within your R script itself.
+    The R client allows you to communicate with the Bender API and therefore submit some new trials within your R script itself.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

@@ -10,20 +10,6 @@ Doing so, he will be more and more precise in the suggestions of hyperparameters
 \details{
 \strong{/!\\ For fully detailed documentation on slots and methods, please visit} \url{https://bender-optimizer.readthedocs.io/en/latest/index.html}
 }
-\section{Usage}{
-
-\preformatted{
-bender = Bender$new("MyBenderMail", "MySecretPassword")
-
-bender$set_algo(id="88155b59-aca1-4cb1-898c-25d942c02859")
-
-suggested_hyperparameters <- bender$suggest(metric="accuracy")
-results <- my_optimization_problem(my_data, suggested_hyperparameters)
-bender$create_trial(list(accuracy=results.accuracy), suggested_hyperparameters)
-
-}
-}
-
 \section{Slots}{
 
 \code{mail} Mail of connected user.
@@ -66,3 +52,13 @@ bender$create_trial(list(accuracy=results.accuracy), suggested_hyperparameters)
 \code{$delete_trial(id)} Delete targeted trial from current algo.
 }
 
+\examples{
+bender = Bender$new("MyBenderMail", "MySecretPassword")
+
+bender$set_algo(id="88155b59-aca1-4cb1-898c-25d942c02859")
+
+suggested_hyperparameters <- bender$suggest(metric="accuracy")
+results <- my_optimization_problem(my_data, suggested_hyperparameters)
+bender$create_trial(list(accuracy=results.accuracy), suggested_hyperparameters)
+
+}

@@ -2,9 +2,9 @@ Package: bender
 Type: Package
 Title: Bender Client
 Version: 0.1.0
-Author: Dylan HEIRSTRAETEN
-Maintainer: Valentin THOREY <valentin@dreem.com>
-Description: R client for Bender Hyperparameters optimizer : bender.dreem.com
+Author: Dylan Heirstraeten
+Maintainer: Valentin Thorey <valentin@dreem.com>
+Description: R client for Bender Hyperparameters optimizer : <https://bender.dreem.com>
     The R client allows you to communicate with the Bender API and therefore submit some new trials within your R script itself.
 License: MIT + file LICENSE
 Encoding: UTF-8

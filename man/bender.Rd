@@ -53,12 +53,19 @@ Doing so, he will be more and more precise in the suggestions of hyperparameters
 }
 
 \examples{
-bender = Bender$new("MyBenderMail", "MySecretPassword")
+\dontrun{
+my_optimization_problem <-function(data, hyperparameters) {
+Do your magic here...
+return(list(perform=0.3))
+}
+
+bender = Bender$new("my_bender_mail", "my_secret_password")
 
 bender$set_algo(id="88155b59-aca1-4cb1-898c-25d942c02859")
 
 suggested_hyperparameters <- bender$suggest(metric="accuracy")
 results <- my_optimization_problem(my_data, suggested_hyperparameters)
-bender$create_trial(list(accuracy=results.accuracy), suggested_hyperparameters)
+bender$create_trial(list(accuracy=results.perform), suggested_hyperparameters)
+}
 
 }
